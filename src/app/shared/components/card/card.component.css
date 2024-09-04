@@ -1,0 +1,66 @@
+.card{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 250px;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.order-info {
+    width: fill;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-container {
+    width: 50px !important;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px; /* Espacio entre el icono y el texto */
+  }
+  
+  .shopping-icon {
+    color: white;
+    font-size: 24px; /* Tamaño del icono */
+  }
+  
+  .order-details h2 {
+    width: fill;
+    height: auto;
+    margin: 0;
+    font-size: 24px; /* Tamaño del número */
+  }
+  
+  .order-details p {
+    margin: 0;
+    font-size: 14px; /* Tamaño del texto "Número de órdenes" */
+    color: #666; /* Color del texto */
+  }
+
+  .cardTop{
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 768px) {
+
+    .card{
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      width: -webkit-fill-available;
+      max-width: -webkit-fill-available;
+      height: 100px;
+      min-height: 100px;
+      max-height: 100px;
+      box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  }
+}
+  

@@ -1,0 +1,94 @@
+<div>
+    <!-- Sidebar -->
+    <div class="sidebar" >
+      <div class="sidebar-brand">
+        <span>DeliveryShop</span>
+      </div>
+      <div class="margin">
+
+      </div>
+
+      <a href="#" class="icon-text-link">
+        <div class="icon-text">
+          <mat-icon class="icon">home_outlined</mat-icon>
+          <span class="text">Panel de control</span>
+        </div>
+      </a>
+
+      <div class="subtitle">
+        <label>Usuarios</label>
+      </div>
+
+      <a href="#" class="icon-text-link">
+        <div class="icon-text">
+          <mat-icon class="icon">group</mat-icon>
+          <span class="text">Empleados</span>
+        </div>
+      </a>
+
+      <div class="subtitle">
+        <label>Administrador</label>
+      </div>
+
+      <a href="#" class="icon-text-link">
+        <div class="icon-text">
+          <mat-icon class="icon">receipt_long</mat-icon>
+          <span class="text">Ordenes</span>
+        </div>
+      </a>
+
+      <a href="#" class="icon-text-link">
+        <div class="icon-text">
+          <mat-icon class="icon">description</mat-icon>
+          <span class="text">Reportes</span>
+        </div>
+      </a>
+
+      <a href="#" class="icon-text-link">
+        <div class="icon-text">
+          <mat-icon class="icon">lunch_dining</mat-icon>
+          <span class="text">Productos</span>
+        </div>
+      </a>
+
+      <a href="#" class="icon-text-link">
+        <div class="icon-text">
+          <mat-icon class="icon">inventory_2</mat-icon>
+          <span class="text">Inventario</span>
+        </div>
+      </a>
+
+      <a href="#" class="icon-text-link">
+        <div class="icon-text">
+          <mat-icon class="icon">category</mat-icon>
+          <span class="text">Categorias</span>
+        </div>
+      </a>
+      
+     
+      
+    </div>
+  
+    <div class="main-content">
+        <nav class="navbar">
+          <div class="menuButton">
+            <mat-icon class="menu-icon" (click)="toggleSidebar()">menu</mat-icon>
+          </div>
+          <div class="icon-container">
+            <div class="circle" (click)="toggleDropdown()">
+              <img src="https://via.placeholder.com/50" alt="Profile" class="profile-img">
+              <span class="material-icons arrow-icon">keyboard_arrow_down</span>
+            </div>
+            <div class="dropdown-menu" *ngIf="menuVisible">
+              <a href="#" class="menu-item">Configuración</a>
+              <a href="#" class="menu-item">Cerrar sesión</a>
+            </div>
+          </div>
+        </nav>
+    
+        <div class="content">
+          <!-- Main content here -->
+        </div>
+      </div>
+</div>
+  
