@@ -1,10 +1,10 @@
-/* Estilos para el sidebar */
+
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 200px; /* Ancho del sidebar */
+    width: 200px; 
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding: 20px;
@@ -44,12 +44,11 @@
   }
   
   .sidebar-links li a:hover {
-    background-color: #ffffff; /* Color de fondo en hover */
+    background-color: #ffffff; 
   }
   
-  /* Ajustes para el contenido principal */
   .main-content {
-    margin-left: 240px; /* Espacio para el sidebar */
+    margin-left: 240px; 
   }
   
   /* Estilos para la barra de navegación */
@@ -83,7 +82,6 @@
     cursor: pointer;
   }
   
-  /* Menú flotante en dispositivos móviles */
   .mobile-menu {
     display: none;
     position: absolute;
@@ -115,36 +113,40 @@
   }
   
   .icon-text-link {
-    display: block; /* Hace que el enlace ocupe el ancho completo disponible */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    color: inherit; /* Hereda el color del texto del div */
-    width: 100%; /* Asegura que el enlace ocupe todo el ancho disponible */
+    display: block; 
+    text-decoration: none; 
+    color: inherit; 
+    width: 100%;
+    cursor: pointer; 
   }
   
   .icon-text {
     display: flex;
     margin-top: 5px;
-    align-items: center; /* Alinea el icono y el texto verticalmente */
-    gap: 10px; /* Espacio entre el icono y el texto */
-    padding: 10px; /* Espaciado dentro del div */
-    transition: background-color 0.3s ease; /* Animación de cambio de color de fondo */
-    width: 100%; /* Asegura que el div ocupe todo el ancho del enlace */
+    align-items: center;
+    gap: 10px; 
+    padding: 10px; 
+    transition: background-color 0.3s ease; 
+    width: 100%; 
+  }
+
+  .icon-text-link:hover .icon-text {
+    background-color: #f0f0f0;
   }
   
   .icon {
-    font-size: 24px; /* Tamaño del icono, ajusta según sea necesario */
-    color: #8e97a3; /* Color del icono, ajusta según tu diseño */
+    font-size: 24px; 
+    color: #8e97a3; 
   }
   
   .text {
     font-size: 1rem;
-    color: #333; /* Color del texto, ajusta según tu diseño */
-    font-weight: 400; /* Ajusta el peso de la fuente según tu diseño */
+    color: #333; 
+    font-weight: 400; 
   }
   
-  /* Efecto al hacer clic */
   .icon-text-link:active .icon-text {
-    background-color: #f0f0f0; /* Color de fondo en clic */
+    background-color: #f0f0f0; 
   }
   
   .margin{
