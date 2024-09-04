@@ -188,7 +188,6 @@
   }
   
   .dropdown-menu {
-    display: none;
     position: absolute;
     top: 100%;
     right: 0;
@@ -198,7 +197,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 150px;
     z-index: 10;
-  }
+}
   
   .dropdown-menu.show {
     display: block;
@@ -208,6 +207,14 @@
     display: block;
     padding: 10px;
     color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu-item-logout{
+    display: block;
+    padding: 10px;
+    color: #bd0b0b;
     text-decoration: none;
     border-bottom: 1px solid #ddd;
   }
@@ -224,6 +231,7 @@
     position: absolute;
     left: 35px;
     display: none;
+    cursor: pointer;
   }
 
 
@@ -252,4 +260,77 @@
       display: block;
     }
   
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  pointer-events: auto;
+}
+
+.sidebar2 {
+  position: fixed;
+  top: 0;
+  left: -90%; /* Oculto fuera de la pantalla */
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 10;
+  transition: left 0.3s ease; /* Animación de deslizamiento */
+}
+
+/* Sidebar visible */
+.sidebar2.show {
+  left: 0; /* Desliza el sidebar a la vista */
+}
+
+/* Estilo para el contenido del sidebar */
+.sidebar2-content {
+  padding: 20px;
+}
+body.sidebar2-open {
+  overflow: hidden; /* Desactiva el scroll del cuerpo */
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    pointer-events: auto;
+    overflow: hidden;
+  }
+  .sidebar2 {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: -90%; /* Oculto fuera de la pantalla */
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    transition: left 0.3s ease; /* Animación de deslizamiento */
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .sidebar2 {
+    position: fixed;
+    top: 0;
+    left: -90%; /* Oculto fuera de la pantalla */
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    transition: left 0.3s ease; /* Animación de deslizamiento */
+  }
 }

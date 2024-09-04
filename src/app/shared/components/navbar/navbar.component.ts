@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -14,13 +15,10 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class NavbarComponent {
 
+  constructor(private router: Router){}
+
   menuVisible = false;
   sidebarVisible = false;
-
-  toggleMenu() {
-    console.log(this.menuVisible)
-    this.menuVisible = !this.menuVisible;
-  }
 
   toggleSidebar() {
     this.sidebarVisible = !this.sidebarVisible;
@@ -28,6 +26,10 @@ export class NavbarComponent {
 
   toggleDropdown() {
     this.menuVisible = !this.menuVisible;
+  }
+
+  closeSidebar() {
+    this.sidebarVisible = false;
   }
 
   clickOutside(event: Event) {
@@ -40,5 +42,29 @@ export class NavbarComponent {
       this.sidebarVisible = false;
       this.menuVisible = false;
     }
+  }
+
+  goToReports() {
+    this.router.navigate(['/reports']);
+  }
+  
+  goToEmployess(){
+    this.router.navigate(['/employess']);
+  }
+
+  goToProducts(){
+    this.router.navigate(['/products']);
+  }
+
+  goToOrders(){
+    this.router.navigate(['/orders']);
+  }
+
+  goToInventory(){
+    this.router.navigate(['/inventory']);
+  }
+
+  goToHome(){
+    this.router.navigate(['']);
   }
 }
