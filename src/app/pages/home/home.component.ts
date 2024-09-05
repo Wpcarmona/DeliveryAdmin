@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CardComponent, NavbarComponent } from '../../shared/components';
+import { StateService } from '../../shared/utils/stateservices/state.services';
 
 @Component({
   selector: 'app-home',
@@ -11,8 +12,16 @@ import { CardComponent, NavbarComponent } from '../../shared/components';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-  @Input() isLoading: boolean = false;
+  isLoading: boolean = false;
+
+  constructor(private stateService: StateService) {}
+
+  ngOnInit() {
+    this.stateService.isLoading$.subscribe(value => {
+      this.isLoading = value;
+    });
+  }
 
 }
