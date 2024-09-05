@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 
 export const routes: Routes = [
     {path:'', component: HomeComponent},
+    {path: 'home/:data', component: HomeComponent },
     {path: 'login', component: LoginComponent},
     {path: 'reports', component: ReportsComponent},
     {path: 'inventory', component: InventoryComponent},

@@ -9,58 +9,81 @@
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
+.cardTop{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
 .order-info {
     width: fill;
     display: flex;
     align-items: center;
   }
-  
-  .icon-container {
-    width: 50px !important;
-    height: 50px;
-    background-color: orange;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15px; /* Espacio entre el icono y el texto */
-  }
-  
-  .shopping-icon {
-    color: white;
-    font-size: 24px; /* Tamaño del icono */
-  }
-  
-  .order-details h2 {
-    width: fill;
-    height: auto;
-    margin: 0;
-    font-size: 24px; /* Tamaño del número */
-  }
-  
-  .order-details p {
-    margin: 0;
-    font-size: 14px; /* Tamaño del texto "Número de órdenes" */
-    color: #666; /* Color del texto */
-  }
 
-  .cardTop{
-    margin-top: 25px;
-    margin-left: 10px;
+
+.icon-container {
+  width: 50px !important;
+  height: 50px;
+  background-color: orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px; /* Espacio entre el icono y el texto */
+}
+
+.shopping-icon {
+  color: white;
+  font-size: 24px; /* Tamaño del icono */
+}
+
+.order-details h2 {
+  width: fill;
+  height: auto;
+  margin: 0;
+  font-size: 24px; /* Tamaño del número */
+}
+
+.order-details p {
+  margin: 0;
+  font-size: 14px; /* Tamaño del texto "Número de órdenes" */
+  color: #666; /* Color del texto */
+}
+
+/* Skeleton styles */
+.skeleton {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  animation: skeleton-loading 1.5s infinite;
+}
+
+.skeleton-number {
+  width: 100px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.skeleton-label {
+  width: 150px;
+  height: 14px;
+}
+
+/* Skeleton animation */
+@keyframes skeleton-loading {
+  0% {
+      background-color: #e0e0e0;
   }
-
-  @media (max-width: 768px) {
-
-    .card{
-      background-color: white;
-      padding: 10px;
-      border-radius: 10px;
-      width: -webkit-fill-available;
-      max-width: -webkit-fill-available;
-      height: 100px;
-      min-height: 100px;
-      max-height: 100px;
-      box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  50% {
+      background-color: #f0f0f0;
+  }
+  100% {
+      background-color: #e0e0e0;
   }
 }
-  
+
+@media (max-width: 768px) {
+  .card{
+      width: -webkit-fill-available;
+      max-width: -webkit-fill-available;
+  }
+}

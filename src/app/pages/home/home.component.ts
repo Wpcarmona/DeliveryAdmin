@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CardComponent, NavbarComponent } from '../../shared/components';
 
 @Component({
@@ -12,5 +12,7 @@ import { CardComponent, NavbarComponent } from '../../shared/components';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
+  @Input() isLoading: boolean = false;
 
 }

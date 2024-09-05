@@ -5,8 +5,16 @@
         <mat-icon class="shopping-icon">{{ icon }}</mat-icon>
       </div>
       <div class="order-details">
-        <h2>{{ number }}</h2>
-        <p>{{ label }}</p>
+        <ng-container *ngIf="!isLoading; else loadingSkeleton">
+          <h2>{{ number }}</h2>
+          <p>{{ label }}</p>
+        </ng-container>
+
+        <!-- Skeleton loader -->
+        <ng-template #loadingSkeleton>
+          <div class="skeleton skeleton-number"></div>
+          <div class="skeleton skeleton-label"></div>
+        </ng-template>
       </div>
     </div>
   </div>
