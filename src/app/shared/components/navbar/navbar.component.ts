@@ -64,6 +64,18 @@ export class NavbarComponent {
     this.router.navigate(['/inventory']);
   }
 
+  goToDeposit(){
+    this.router.navigate(['/deposit']);
+  }
+
+  goToWithdraw(){
+    this.router.navigate(['/withdraw']);
+  }
+
+  goTooffers(){
+    this.router.navigate(['/offers']);
+  }
+
   goToHome(){
     this.router.navigate(['']);
   }

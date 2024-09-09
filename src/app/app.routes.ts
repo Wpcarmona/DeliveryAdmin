@@ -1,6 +1,14 @@
 import { Routes } from '@angular/router';
-import { EmployeesComponent, HomeComponent, InventoryComponent, LoginComponent, OrdersComponent, ProductsComponent, ReportsComponent } from './pages';
-import { AppComponent } from './app.component';
+import {DepositComponent,
+        EmployeesComponent, 
+        HomeComponent, 
+        InventoryComponent, 
+        LoginComponent, 
+        OffersComponent, 
+        OrdersComponent, 
+        ProductsComponent, 
+        ReportsComponent, 
+        WithdrawComponent } from './pages';
 
 export const routes: Routes = [
     {path:'', component: HomeComponent},
@@ -11,5 +19,8 @@ export const routes: Routes = [
     {path: 'orders', component: OrdersComponent},
     {path: 'products', component: ProductsComponent},
     {path: 'employess', component: EmployeesComponent},
+    {path: 'deposit', component: DepositComponent},
+    {path: 'offers', component: OffersComponent},
+    {path: 'withdraw', component: WithdrawComponent},
     {path: '**', redirectTo: 'login'},
 ];
