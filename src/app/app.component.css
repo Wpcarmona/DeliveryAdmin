@@ -1,13 +1,28 @@
-.content{
+.content main{
     margin-left: 250px;
     margin-top: 20px;
     width: fill;
     height: auto;
 }
 
+.contentbody{ 
+    margin-left: 250px;
+    margin-top: 20px;
+    width: fill;
+    height: auto;
+}
+
+
 @media (max-width: 768px) {
     
     .content{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: fill;
+        height: auto;
+    }
+
+    .contentbody{ 
         margin-left: 0px;
         margin-top: 20px;
         width: fill;

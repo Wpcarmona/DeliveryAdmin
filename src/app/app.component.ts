@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { CardComponent, LoaderComponent, NavbarComponent } from './shared/components';
 import { HomeComponent } from "./pages/home/home.component";
 import { EmployeesComponent } from "./pages/employees/employees.component";
@@ -17,24 +17,25 @@ import { StateService } from './shared/utils/stateservices/state.services';
     HomeComponent,
     EmployeesComponent,
     LoaderComponent,
-],
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  isLoading = false;
   title = 'DeliveryAdmin';
+  isLoginPage = false;
+  isLoading = false;
 
-  constructor(private stateService: StateService) {}
-
+  constructor(private stateService: StateService, private router: Router) {
+    this.router.events.subscribe(() => {
+      this.isLoginPage = this.router.url === '/login';
+    });
+  }
 
   showLoader() {
-    console.log('hola')
     this.stateService.setIsLoading(true);
     this.isLoading = true;
 
-    // Simular carga y ocultar loader después de 3 segundos
     setTimeout(() => {
       this.stateService.setIsLoading(false);
       this.isLoading = false;

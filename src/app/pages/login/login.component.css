@@ -1,0 +1,165 @@
+/* General container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: whitegray;
+  }
+
+  .maincontent{
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    width: fill;
+    height: auto;
+  }
+  
+  /* Main content */
+  .login-content {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  /* Left side with image */
+  .left-side {
+    background-color: #f8f8f8;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-image {
+    width: 80%;
+    height: auto;
+  }
+  
+  /* Right side with form */
+  .right-side {
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF4500;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 93%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .password-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .eye-button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    cursor: pointer;
+  }
+  
+  .eye-button mat-icon {
+    color: #666;
+  }
+  
+  .login-button {
+    width: 99%;
+    padding: 12px;
+    background-color: #FF4500;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-button[disabled] {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+  
+  .already-account {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .already-account a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .errorPass {
+    color: red;
+    font-size: 12px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .login-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-side {
+      display: none;
+    }
+  }
+  
