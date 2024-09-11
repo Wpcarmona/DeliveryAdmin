@@ -5,6 +5,7 @@
     align-items: center;
     height: 100vh;
     background-color: whitegray;
+    margin-left: -30%;
   }
 
   .maincontent{
@@ -162,4 +163,37 @@
       display: none;
     }
   }
-  
+@media (min-width: 1440px) {
+/* General container */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: whitegray;
+    margin-left: -20%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  /* General container */
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: whitegray;
+      margin-left: -20%;
+    }
+
+    .login-content {
+      display: flex;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 400px;
+      width: 100%;
+    }
+    
+  }
