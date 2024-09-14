@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
   title = 'DeliveryAdmin';
   isLoginPage = false;
   isLoading = false;
-  isSessionActive = false;
+  isSessionActive = true;
 
   constructor(private stateService: StateService, private router: Router) {
     this.router.events.subscribe(() => {
