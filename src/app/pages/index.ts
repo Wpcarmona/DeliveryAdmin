@@ -9,3 +9,4 @@ export * from './reports/reports.component';
 export * from './deposit/deposit.component';
 export * from './withdraw/withdraw.component'; 
 export * from './offers/offers.component'; 
+export * from './category/category.component';

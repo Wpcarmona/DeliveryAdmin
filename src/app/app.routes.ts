@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import {DepositComponent,
+import {CategoryComponent, DepositComponent,
         EmployeesComponent, 
         HomeComponent, 
         InventoryComponent, 
@@ -14,6 +14,7 @@ export const routes: Routes = [
     {path:'', component: HomeComponent},
     {path: 'home/:data', component: HomeComponent },
     {path: 'login', component: LoginComponent},
+    {path: 'category', component: CategoryComponent},
     {path: 'reports', component: ReportsComponent},
     {path: 'inventory', component: InventoryComponent},
     {path: 'orders', component: OrdersComponent},

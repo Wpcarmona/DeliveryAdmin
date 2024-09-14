@@ -52,6 +52,10 @@ export class NavbarComponent {
     this.router.navigate(['/employess']);
   }
 
+  goToCategory(){
+    this.router.navigate(['/category']);
+  }
+
   goToProducts(){
     this.router.navigate(['/products']);
   }
