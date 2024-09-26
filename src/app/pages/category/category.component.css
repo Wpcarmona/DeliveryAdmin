@@ -122,6 +122,10 @@
     justify-content: center;
     align-items: center;
 }
+.contentCard :hover{
+    background:rgb(240, 240, 240);
+    cursor: pointer;
+}
 .card{
     background-color: white;
     padding: 10px;
@@ -134,6 +138,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .contentCard .card label{
     overflow: hidden;
@@ -151,6 +156,7 @@
         max-width: -webkit-fill-available;
     }
 }
+
 
 /* width: 100vw;
 height: 100vh;
