@@ -2,3 +2,159 @@
     margin-left: 20px;
     margin-top: 30px;
 }
+.contentSubtitle{
+    top: 0; left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 22px;
+}
+.iconx{
+    cursor: pointer;
+}
+.btn-Cerrar mat-icon:hover{
+    padding: auto;
+    background:rgb(240, 240, 240);
+    border-radius: 15px;
+}
+.btn-Crear{
+    /* all: unset; */
+    padding: auto;
+}
+.btn-Crear label{
+    background:rgb(209, 206, 206);
+    padding: 10px 0px;
+    color: black;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.btn-Cancelar{
+    padding: auto;
+}
+.btn-Cancelar label{
+    padding: 10px 0px;
+    background:black;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.boton-Modal{
+    padding: auto;
+    background:rgb(209, 206, 206);
+}
+.boton-Modal label{
+    padding: 10px 15px;
+    background:rgb(209, 206, 206);
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-Modal label:hover{
+    background:rgb(145, 143, 143);
+}
+#btn-Modal{
+    display: none;
+}
+.container-Modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-Modal:checked ~.container-Modal{
+    display: flex;
+}
+.content-Modal{
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    padding: 40px;
+    background-color:white;
+    border-radius: 10px;
+}
+.content-Modal p{
+    padding: 10px px;
+}
+.content-Modal .btn-Cerrar{
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-Modal .btn-Cerrar label{
+    cursor: pointer;
+}
+.content-Modal .Campo{
+    width: -webkit-fill-available;
+    padding: 15px 0px;
+    border-radius: 10px;
+    border:0.3px solid rgb(212, 212, 212);
+    margin-top: 40px;
+    padding-left: 10PX;
+}
+/* screen and */
+@media (max-width: 768px){
+    .content-Modal{
+        width: -webkit-fill-available;
+        max-width: -webkit-fill-available;
+    }
+}
+.contentCard{
+    margin-left: 20px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 140px;
+    height: 100px;
+    min-height: 60px;
+    max-height: 60px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentCard .card label{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+}
+@media (max-width: 768px) {
+    .contentCard {
+        margin-top: 0px;
+        margin-left: 0px;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+    .card{
+        width: -webkit-fill-available;
+        max-width: -webkit-fill-available;
+    }
+}
+
+/* width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; */

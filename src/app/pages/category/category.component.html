@@ -1,5 +1,71 @@
 <div>
     <div class="contentTitle">
         <h2>Categorias</h2>
+        
+    </div>
+</div>
+
+<div>
+  <div class="contentSubtitle">
+    <mat-icon class="icon">category</mat-icon>
+    <p>No tienes categorias creadas</p>
+    <div class="boton-Modal">
+      <div for="btn-Modal" (click)="openModal()">
+        <label>
+          Crear categoria
+        </label>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="contentCard">
+  <div class="card">
+    <label>Nombre de la categoria</label>
+  </div>
+  <div class="card">
+    <label>Nombre de la categoria</label>
+  </div>
+  <div class="card">
+    <label>Nombre de la categoria</label>
+  </div>
+  <div class="card">
+    <label>Nombre de la categoria</label>
+  </div>
+  <div class="card">
+    <label>Nombre de la categoria</label>
+  </div>
+</div>
+
+<input type="checkbox" id="btn-Modal">
+<div class="container-Modal" id="modal">
+  <div class="content-Modal">
+    <div class="btn-Cerrar" (click)="closeModal()">
+      <mat-icon class="iconx">close_outline</mat-icon>
+    </div>    
+    <div class="contentSubtitle">
+     <p>Crear categoria</p> 
+    </div>
+    <div autocomplete="off">
+      <input 
+      class="Campo"
+      type="text" 
+      placeholder="Nombre de la categoria">
+    </div>
+    <div class="btn-Crear">
+      <!-- (click)="clickSaveData()" -->
+      <div>
+        <label>
+          Crear categoria
+        </label>
+      </div>
+    </div>
+    <div class="btn-Cancelar">
+      <div for="btn-Modal" (click)="closeModal()">
+        <label>
+          Cancelar
+        </label>
+      </div>
+    </div>
+  </div>
 </div>
