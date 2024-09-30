@@ -5,6 +5,7 @@ import { CardComponent, LoaderComponent, NavbarComponent } from './shared/compon
 import { HomeComponent } from "./pages/home/home.component";
 import { EmployeesComponent } from "./pages/employees/employees.component";
 import { StateService } from './shared/utils/stateservices/state.services';
+import { CategoryComponent } from './pages/category/category.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { StateService } from './shared/utils/stateservices/state.services';
     HomeComponent,
     EmployeesComponent,
     LoaderComponent,
+    CategoryComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
